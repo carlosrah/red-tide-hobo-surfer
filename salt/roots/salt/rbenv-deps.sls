@@ -22,5 +22,7 @@ rbenv-script:
 profile-source:
   cmd.wait:
     - name: source ~/.profile
+    - user: vagrant
+    - cmd: /home/vagrant
     - watch:
       - cmd: rbenv-script
