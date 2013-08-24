@@ -5,3 +5,7 @@ core:
       - build-essential
       - git-core
       - vim-nox
+      - bash
+      - openssl
+      - make
+      - curl
