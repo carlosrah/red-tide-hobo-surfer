@@ -77,14 +77,13 @@ $ bundle exec rails s
 ```
 
 You'll now be able to run http://localhost:3000 and your index route will be
-visible. (You may also run `rails s` from your host machine once you have built
-the database on the guest machine.)
+visible.
 
-### Note
+### A Note on Changes
 
-Any changes you make to your `Gemfile` will require you to run `$ bundle` from
-the guest machine. You'll also likely need to restart your Rails server on the
-guest machine on major app changes as well.
+As usual, any changes you make to your `Gemfile` will require you to run `$
+bundle` from the guest machine. You'll also likely need to restart your Rails
+server on the guest machine.
 
 ## Connecting to MySQL using a GUI
 
