@@ -1,13 +1,11 @@
-# Salty-Rails
+# Red Tide Hobo Surfer
 
-This Vagrant/SaltStack configuration is my attempt to automate a basic Ruby,
-Rails-friendly, environment with a MySQL database. 
+This is a Vagrant/SaltStack configuration to build disposable Ruby development
+environments with a MySQL database option.
 
-While this was built with Rails in mind, there is nothing preventing the user
-from using this for any Ruby specific project where they want an isolated
-development environment with a MySQL database. 
-
-In other words, there is nothing Rails specific with this environment.
+While this was built with Rails and Sinatra in mind, there is nothing preventing
+the user from using this for any Ruby specific project where they want an
+isolated development environment with a MySQL database.
 
 ## Requirements
 
@@ -16,7 +14,7 @@ This Vagrant build expects that you have the
 
 ## Usage
 
-Clone this repo into your Rails application directory and run the following:
+Clone this repo into your development directory and run the following:
 
 ```bash
 $ vagrant up
