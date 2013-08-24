@@ -20,6 +20,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder "salt/roots/", "/srv/"
 
   config.vm.network :forwarded_port, guest: 80, host: 8080
+  config.vm.network :forwarded_port, guest: 3000, host: 3000
 
   ## Set your salt configs here
   config.vm.provision :salt do |salt|
@@ -27,7 +28,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     salt.minion_config = "salt/minion"
 
     ## Installs our example formula in "salt/roots/salt"
-    salt.run_highstate = true
+    # salt.run_highstate = true
+    salt.run_highstate = false
   end
 
   # Create a forwarded port mapping which allows access to a specific port

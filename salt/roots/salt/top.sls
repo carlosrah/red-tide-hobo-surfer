@@ -1,4 +1,6 @@
 base:
   '*':
-    - vim
+    - core
+    - rbenv-deps
     - mysql
+    - nodejs
